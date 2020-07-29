@@ -12,5 +12,10 @@ async function bootstrap() {
   const port = process.env.PORT || serverConfig.port;
   await app.listen(port);
   logger.log(`Application listening on port ${port}`);
+
+  if (process.env.NODE_ENV === 'development') {
+    app.enableCors();
+    logger.log(`Application running on development mode. CORS enabled.`);
+  }
 }
 bootstrap();
