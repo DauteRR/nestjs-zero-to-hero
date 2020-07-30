@@ -1,7 +1,8 @@
-import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.interface';
 
 export interface ServerConfig {
   port: number;
+  origin: CorsOptions['origin'];
 }
 
 export interface DBConfig {

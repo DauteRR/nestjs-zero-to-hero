@@ -1,2 +1,5 @@
+server:
+  origin: TODO: url
+
 db:
   synchronize: false
