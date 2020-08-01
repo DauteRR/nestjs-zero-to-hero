@@ -7,7 +7,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './jwt.strategy';
 import * as config from 'config';
-import { JWTConfig } from 'src/typings';
+import { JWTConfig } from '../typings';
 
 const jwtConfig: JWTConfig = config.get('jwt');
 

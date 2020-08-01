@@ -1,6 +1,6 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
 import * as config from 'config';
-import { DBConfig } from 'src/typings';
+import { DBConfig } from '../typings';
 
 const dbConfig: DBConfig = config.get('db');
 

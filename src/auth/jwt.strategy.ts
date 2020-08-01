@@ -5,7 +5,7 @@ import { JwtPayload } from './jwt-payload.interface';
 import { InjectRepository } from '@nestjs/typeorm';
 import { UserRepository } from './user.repository';
 import * as config from 'config';
-import { JWTConfig } from 'src/typings';
+import { JWTConfig } from '../typings';
 
 const jwtConfig: JWTConfig = config.get('jwt');
 
