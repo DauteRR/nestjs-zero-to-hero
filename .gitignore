@@ -1,6 +1,7 @@
 # compiled output
-/dist
+/task-management/dist
 /task-management/node_modules
+/school-management/dist
 /school-management/node_modules
 
 # Logs
