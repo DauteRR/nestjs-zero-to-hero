@@ -6,6 +6,7 @@ import { StudentResolver } from './student.resolver';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Student])],
-  providers: [StudentService, StudentResolver]
+  providers: [StudentService, StudentResolver],
+  exports: [StudentService]
 })
 export class StudentModule {}
