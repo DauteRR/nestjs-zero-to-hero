@@ -7,7 +7,9 @@ export class LessonResolver {
   constructor(private lessonService: LessonService) {}
 
   @Query(() => Lesson)
-  lesson(): void {}
+  lesson(@Args('id') id: string) {
+    return this.lessonService.getLesson(id);
+  }
 
   @Mutation(() => Lesson)
   createLesson(
