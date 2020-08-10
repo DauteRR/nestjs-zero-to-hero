@@ -14,6 +14,10 @@ export class CreateLessonInput {
   @IsDateString()
   @Field()
   endDate: string;
+
+  @IsUUID('4', { each: true })
+  @Field(() => [ID], { defaultValue: [] })
+  students: string[];
 }
 
 @InputType()
